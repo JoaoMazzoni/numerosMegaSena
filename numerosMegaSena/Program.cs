@@ -4,14 +4,14 @@ int[] numerosOriginais = new int[size];
 int[] numerosOrdenados = new int[size];
 int aux = 0;
 
-
+Console.WriteLine("Números sorteados: ");
 for (int i = 0; i < size; i++)
 {
     numerosOriginais[i] = new Random().Next(1, 60);
 
     for (int j = 1; j < size; j++)
     {
-        if (numerosOriginais[i] == numerosOriginais[j - 1])
+        if (numerosOriginais[i] == numerosOriginais[j])
         {
             numerosOriginais[i] = new Random().Next(1, 60);
         }
